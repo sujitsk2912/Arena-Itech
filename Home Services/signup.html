@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="Assests/css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="login_style.css" />
+  <link rel="stylesheet" href="Assests/css/Responsive/responsiveLogin.css">
+
+</head>
+
+<body class="body-main">
+  <div class="container-register">
+    <div class="wrapper-register">
+      <img src="Assests/images/user.png">
+
+      <h2>Register</h2>
+      <div class="user-box">
+        <span>
+          <a href="#">Home</a>
+        </span>
+        <span>|</span>
+        <span>
+          <a href="signin.html">Login</a></span>
+      </div>
+      <br>
+      <form action="" class="form-register">
+        <div class="input-field">
+          <input type="text" placeholder="Sponser id" required />
+          <input type="text" placeholder="Sponser name" required />
+          <input type="text" placeholder="Username" required />
+          <input type="email" placeholder="Email" required />
+          <input type="tel" placeholder="Phone" required />
+
+          <select name="Position" id="Position">
+            <option selected>Select Position</option>
+            <option value="Left">Left</option>
+            <option value="Right">Right</option>
+          </select>
+
+          <input type="password" placeholder="Password" required />
+          <input type="password" placeholder="Re-Password" required />
+        </div>
+
+        <button class="btn">Register</button>
+
+        <span class="Redirect-link">Already a user? <a href="signin.html">Login here</a></span>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

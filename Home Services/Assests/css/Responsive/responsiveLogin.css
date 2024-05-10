@@ -1,0 +1,51 @@
+/* For screens smaller than 480px (e.g., smartphones) */
+
+@media (max-width: 480px) {
+  .wrapper-main,
+  .wrapper-register {
+    width: 90%;
+    height: auto;
+  }
+
+  .form-main,
+  .form-register {
+    height: auto;
+    width: 100%;
+  }
+
+  /* success page style */
+
+  .content-box {
+    width: 90%;
+  }
+
+  .content-box h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .content-box .user-box {
+    width: 70%;
+  }
+}
+
+/* For screens above 481px (e.g., mobiles, tablets, desktops) */
+
+@media (min-width: 481px) {
+  .form-main,
+  .form-register {
+    height: auto;
+    width: 100%;
+  }
+
+  /* success page style */
+
+  .content-box h2 {
+    text-align: center;
+  }
+
+  .content-box .user-box {
+    width: 25vw;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,210 @@
+/* Media Queries for Responsive Design */
+
+/* Small devices than 576px */
+
+@media (max-width: 575px) {
+  .container {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .row .col-sm-9 {
+    background: ghostwhite;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .container .content-1 {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .container .content-1 .first,
+  .container .content-1 div {
+    width: 100%;
+  }
+
+  .content-box {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .content-box .left-content {
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+  }
+
+  .content-2,
+  .content-3 {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .row .col-sm-9 {
+    background: ghostwhite;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .container .content-1 {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .container .content-1 .first,
+  .container .content-1 div {
+    width: 100%;
+  }
+
+  .content-box {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .nav-item {
+    max-height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    max-height: 5rem;
+  }
+
+  .navbar .nav li {
+    max-height: 5rem;
+    height: 5rem;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar .nav li a {
+    color: #fff;
+    max-height: 5rem;
+    height: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .row .col-sm-9 {
+    background: ghostwhite;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .container .content-1 {
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .container .content-1 .first,
+  .container .content-1 div {
+    width: 100%;
+  }
+
+  .content-box {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .sidenav {
+    background-color: rgb(15, 15, 65);
+    height: auto;
+    padding: 50px 20px;
+    width: 30rem;
+    overflow: auto;
+  }
+
+  .row .col-sm-9 {
+    background: ghostwhite;
+    height: fit-content;
+    padding: 20px;
+  }
+
+  .container .content-1 {
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .container .content-1 .first,
+  .container .content-1 div {
+    width: 100%;
+  }
+
+  .content-box {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    height: auto;
+    flex-direction: column;
+  }
+}

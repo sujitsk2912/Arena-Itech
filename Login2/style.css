@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* sign in, sign up and forgot password page styling */
+
+body {
+  background-image: url(Assests/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container, .container-fluid {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.wrapper {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  /* background-color: rgba(255, 255, 255, 0.196);
+  backdrop-filter: blur(10px); */
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  /* box-shadow: 0px 0px 40px 5px rgba(22, 22, 22, 0.287); */
+  /* padding: 0px 20px; */
+  /* margin: 20rem; */
+}
+
+.wrapper h2 {
+  text-align: center;
+  font-size: 28px;
+  color: goldenrod;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  /* border: 2px solid red; */
+  margin-top: 30px;
+}
+
+.wrapper label {
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  margin: 20px 60px;
+  padding: 20px 0;
+  width: 90%;
+  font-size: 15px;
+  /* border: 2px solid blue; */
+}
+
+.content a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+}
+
+.content a:hover {
+  color: goldenrod;
+  font-weight: 600;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* border: 2px solid red; */
+}
+
+.content-item label {
+  font-weight: 500;
+}
+
+.content-item input {
+  background-color: #fff;
+  padding: 20px;
+  height: 2rem;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid transparent;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.content-item input:hover,
+.content-item input:focus {
+  border-color: rgb(4, 4, 132);
+  color: rgb(4, 4, 132);
+}
+
+.content .forgot-ps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.remember-me input {
+  height: 15px;
+  width: 15px;
+}
+
+.content .btn {
+  height: 3rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000;
+  background-color: gold;
+  transition: all 0.3s ease-in-out;
+  margin: 10px 0;
+}
+
+.content .btn:hover {
+  background-color: #e8e8e8;
+  color: #000;
+}
+
+.content .createAc {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+/* table start */
+
+.content-table {
+  background-color: #fff;
+  height: auto;
+  width: 20rem;
+  border-radius: 10px;
+  border: none;
+}
+
+td,
+th {
+  /* border: 1px solid #d1d0d0; */
+
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: auto;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  /* border: 3px solid red; */
+  text-align: center;
+}
+
+.content-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 40px; */
+  padding: 20px;
+}
+
+.content-table img {
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.content-table table {
+  /* margin: 20px; */
+  border-radius: 20px;
+}
+
+table th,
+td {
+  color: rgb(70, 70, 70);
+  letter-spacing: 1px;
+  border: 1px solid rgba(106, 105, 105, 0.813);
+}
+
+/* table end */
+
+/* success page and error page styling */
+
+.container-fluid .content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+  color: grey;
+  border-radius: 10px;
+  height: auto;
+  width: 20rem;
+  gap: 10px;
+  padding: 40px 0px;
+}
+
+.content-box .logo {
+  height: 100px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  border-radius: 50px;
+}
+
+.container-fluid .content-box .success-messege {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(2, 181, 2);
+}
+
+.container-fluid .content-box .error-messege {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(249, 57, 60);
+}
+
+.content-box p {
+  text-align: center;
+  text-wrap: wrap;
+  padding: 0 20px;
+}
+
+.container-fluid .btn-success {
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(6, 216, 6);
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.container-fluid .btn-error {
+  width: 150px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(249, 73, 76);
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.container-fluid .btn-error:hover {
+  background-color: rgb(245, 34, 37);
+  cursor: pointer;
+}
+
+/* media query for flexbox */
+
+@media (max-width: 658px) {
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    gap: 30px;
+  }
+}

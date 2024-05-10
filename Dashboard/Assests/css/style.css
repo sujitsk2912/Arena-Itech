@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+/* navbar */
+
+.navbar {
+  background-color: rgb(15, 15, 65);
+  height: auto;
+  color: #fff;
+  border-radius: 0;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar .nav li a {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar .navbar-toggle {
+  padding: 0px;
+  height: 3rem;
+}
+
+.navbar .navbar-toggle .bx {
+  font-size: 28px;
+}
+
+/* side navbar */
+
+.container-fluid img {
+  height: 7rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.container-fluid .row h2,
+span {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  color: #fff;
+}
+
+.container-fluid h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+
+.sidenav {
+  background-color: rgb(15, 15, 65);
+  height: 100vh;
+  padding: 50px 20px;
+  width: 30rem;
+}
+
+.sidenav li {
+  /* color: #000; */
+  width: 100%;
+  margin: 30px 0;
+}
+
+.sidenav li i {
+  /* color: #000; */
+  position: absolute;
+  font-size: 18px;
+  z-index: 10;
+  top: 11px;
+  left: 10px;
+}
+
+.nav .fas {
+  color: #fff;
+}
+
+.nav li a {
+  color: #fff;
+  padding-left: 40px;
+}
+
+.sidenav .nav-pills li :hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* .nav .fas:hover {
+  color: #000;
+} */
+
+/* Dashboard content */
+
+.row.content {
+  height: 100vh;
+}
+
+.row .col-sm-3 {
+  height: 100vh;
+  width: 20%;
+}
+
+.row .col-sm-9 {
+  background: ghostwhite;
+  height: 100vh;
+  max-height: 100vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: hidden;
+  padding: 10px 20px;
+}
+
+.col-sm-9 .header .col-sm-6 {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+}
+
+.col-sm-9 .header .row {
+  max-height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.col-sm-9 .header h2 {
+  text-align: start;
+  color: black;
+}
+
+.col-sm-9 .header i {
+  text-align: end;
+  font-size: 24px;
+  color: black;
+}
+
+.col-sm-9 .header span {
+  color: black;
+}
+
+/* content-1  */
+
+.container .content-1 {
+  height: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .content-1 .first {
+  height: 15rem;
+  width: 20rem;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(10, 10, 93);
+}
+
+.container .content-1 div {
+  height: 15rem;
+  width: 20rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.335);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container .content-1 div:hover {
+  transform: scale(1.03);
+}
+
+.container .content-1 .first h2,
+.container .content-1 .first h3 {
+  color: #fff;
+}
+
+.container .content-1 div span {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.container .content-1 span img {
+  height: 24px;
+  margin-right: 0px;
+}
+
+.container .content-1 h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #222020c0;
+}
+
+.container .content-1 div h2 {
+  font-size: 34px;
+  font-weight: 500;
+  color: #222020c0;
+}
+
+/* content box  */
+
+.content-box {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+.content-box .left-content {
+  width: 100%;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+/* bar-chart */
+
+.content-2,
+.content-3 {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.335);
+}
+
+/* doughnut-chart */
+
+.content-box .right-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.335);
+  background-color: #fff;
+  padding: 20px 0;
+}
+
+.right-content div span {
+  color: grey;
+  border-bottom: 1px solid grey;
+}
+
+.right-content button {
+  padding: 5px 20px;
+  background-color: rgb(242, 217, 74);
+  border-radius: 5px;
+  font-weight: 500;
+  color: rgb(86, 86, 86);
+  border: 2px solid transparent;
+  outline: none;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.right-content button:hover {
+  background-color: rgb(235, 199, 0);
+  color: #000;
+}

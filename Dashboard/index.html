@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="Assests/js/bar-chart.js"></script>
+    <script src="Assests/js/spline-chart.js"></script>
+    <script src="Assests/js/doughnut-chart.js"></script>
+    <link rel="stylesheet" href="Assests/css/style.css" />
+    <link rel="stylesheet" href="Assests/css/responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-inverse visible-sm visible-xs">
+        <div class="container-fluid nav-item">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#myNavbar"
+            >
+              <i
+                class="bx bx-menu bx-flip-horizontal"
+                style="color: #fffbfb9d"
+              ></i>
+            </button>
+            <a class="navbar-brand" href="#">Dashboard</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">File</a></li>
+              <li><a href="#">Messeges</a></li>
+              <li><a href="#">Notification</a></li>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">Graph</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row content">
+          <div class="col-sm-3 sidenav hidden-sm hidden-xs">
+            <img src="Assests/images/user.png" alt="" />
+            <h2>John Don</h2>
+            <span>Johndon@company.com</span>
+            <ul class="nav nav-pills nav-stacked">
+              <li class="active">
+                <i class="fas fa-home"></i><a href="#section1">Home</a>
+              </li>
+              <li><i class="fas fa-folder"></i><a href="#section2">File</a></li>
+              <li>
+                <i class="fas fa-envelope"></i><a href="#section3">Messages</a>
+              </li>
+              <li>
+                <i class="fas fa-bell"></i><a href="#section4">Notification</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i
+                ><a href="#section5">Location</a>
+              </li>
+              <li>
+                <i class="fas fa-chart-bar"></i><a href="#section6">Graph</a>
+              </li>
+            </ul>
+
+            <br />
+          </div>
+
+          <div class="col-sm-9">
+            <!-- <div class="header">
+              <div class="row">
+                <div class="col-sm-6 col-xs-6">
+                  <h2>Dashboard User</h2>
+                </div>
+                <div class="col-sm-6 col-xs-6 text-right">
+                  <span>
+                    <i class="fas fa-bars"></i>
+                  </span>
+                </div>
+              </div>
+            </div> -->
+
+            <div class="content-1">
+              <div class="first">
+                <span
+                  ><h3>Earning</h3>
+                  <img src="Assests/images/coin.png" alt="" />
+                </span>
+                <h2>$ 628</h2>
+              </div>
+              <div>
+                <span
+                  ><h3>Share</h3>
+                  <img src="Assests/images/share.png" alt="" />
+                </span>
+                <h2>2434</h2>
+              </div>
+              <div>
+                <span
+                  ><h3>Likes</h3>
+                  <img src="Assests/images/like.png" alt="" />
+                </span>
+                <h2>1259</h2>
+              </div>
+              <div>
+                <span
+                  ><h3>Rating</h3>
+                  <img src="Assests/images/star.png" alt="" />
+                </span>
+                <h2>8.5</h2>
+              </div>
+            </div>
+
+            <div class="content-box">
+              <div class="left-content">
+                <div class="content-2">
+                  <canvas
+                    id="bar-chart"
+                    class="bar-chart"
+                    style="height: 30vh; width: 55vw"
+                  ></canvas>
+                </div>
+                <div class="content-3">
+                  <canvas
+                    id="spline-chart"
+                    class="spline-chart"
+                    style="height: 30vh; width: 55vw"
+                  ></canvas>
+                </div>
+              </div>
+              <div class="right-content">
+                <canvas
+                  id="doughnut-chart"
+                  class="doughnut-chart"
+                  style="height: 40vh; width: 100%; padding: 20px"
+                >
+                </canvas>
+
+                <div>
+                  <span>Lorem, ipsum.</span>
+                  <span>Lorem, ipsum.</span>
+                  <span>Lorem, ipsum.</span>
+                </div>
+
+                <button>Check Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
